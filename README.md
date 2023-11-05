@@ -31,7 +31,7 @@ Here's a guide on how to wire the components for the `Thermostat_for_Plug-in_Hea
 **Remember you need to tie the GND lines together, and the 3.3V vcc too... The esp32 S2 Mini only has 2 GND Pins and 1 3.3V pin!**
 
 
-- **Plug IN**: Get a high power short APLIANCE or HEAVY DUTY EXT cord with a 3 prong plug, cut in half and use male plug in side for AC power in to unit, use 20A In Line fuse on HOT line)
+- **Plug IN**: Get a high power short APLIANCE or HEAVY DUTY EXT cord with a 3 prong plug, cut in half and use male plug in side for AC power in to unit. (For safety use 20A In Line fuse on HOT line)
 
 ### ESP32-S2 Mini
 - **5V Power**: Connect the 5V USB output from a charging block to ESP32 with a usb-c cable.
@@ -67,7 +67,7 @@ Here's a guide on how to wire the components for the `Thermostat_for_Plug-in_Hea
 - **"Relay On" LED**: Connect the anode (longer leg) to a GPIO and the cathode (shorter leg) to GND through a resistor (e.g., 330Ω).
 - **"Relay Off" LED**: Connect similarly to another GPIO.
 
-Remember to follow all safety precautions when working with electricity, especially mains voltages. It is recommended that mains electricity connections be handled by a qualified electrician. The relay connections to the 120V plug should be insulated properly and secured within an appropriate enclosure.
+Remember to follow all safety precautions when working with electricity, especially mains voltages. It is recommended that mains electricity connections be handled by a qualified electrician, or a brave USA homeowner that understands the risks, since that is legal here. The relay connections to the 120V plug should be insulated properly and secured within an appropriate enclosure.
 
 
 ## Setup and Usage
