@@ -33,6 +33,7 @@ This repository contains the code and documentation for a custom-built thermosta
 
 Here's a guide on how to wire the components for the `Thermostat_for_Plug-in_Heater` project:
 
+Open numbers can be found in the .INO project file.
 **Remember you need to tie the GND lines together, and the 3.3V vcc too... The esp32 S2 Mini only has 2 GND Pins and 1 3.3V pin!**
 
 
