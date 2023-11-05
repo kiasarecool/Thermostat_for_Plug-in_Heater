@@ -2,6 +2,28 @@
 
 This repository contains the code and documentation for a custom-built thermostat designed to control plug-in heaters. The thermostat uses a dual 10A relays setup in parallel to handle up to 20A of current, making it suitable for high-power applications such as heating a home greenhouse.
 
+## Image Gallery
+
+Here are some images of the `Thermostat_for_Plug-in_Heater` project setup and components:
+
+![Thermostat Wiring Overview](images/kiasarecool-0.jpg)
+*Thermostat Wiring Overview*
+
+![Wiring Detail](images/kiasarecool-1.jpg)
+*Wiring Detail*
+
+![Relay Module Wiring](images/kiasarecool-2.jpg)
+*Relay Module Wiring*
+
+![Completed Assembly Front](images/kiasarecool-3.jpg)
+*Completed Assembly Front*
+
+![Completed Assembly Back](images/kiasarecool-4.jpg)
+*Completed Assembly side/ inside *
+
+
+Please note that these images are for reference only. Ensure all connections are secure and follow safety standards when replicating this project.
+
 ## Features
 
 - **Temperature Control**: Utilizes a BME280 sensor for accurate temperature readings.
