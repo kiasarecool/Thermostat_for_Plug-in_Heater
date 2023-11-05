@@ -6,23 +6,9 @@ This repository contains the code and documentation for a custom-built thermosta
 
 Here are some images of the `Thermostat_for_Plug-in_Heater` project setup and components:
 
-![Thermostat Wiring Overview](images/kiasarecool-0.jpg)
-*Thermostat Wiring Overview*
+![Thermostat Wiring Overview](images/kiasarecool-30.jpg)
+*Inside wooden enclosure*
 
-![Wiring Detail](images/kiasarecool-1.jpg)
-*Wiring Detail*
-
-![Relay Module Wiring](images/kiasarecool-2.jpg)
-*Relay Module Wiring*
-
-![Completed Assembly Front](images/kiasarecool-3.jpg)
-*Completed Assembly Front*
-
-![Completed Assembly Back](images/kiasarecool-4.jpg)
-*Completed Assembly side/ inside *
-
-
-Please note that these images are for reference only. Ensure all connections are secure and follow safety standards when replicating this project.
 
 ## Features
 
@@ -109,6 +95,27 @@ The ESP32-S2 Mini supports OTA updates. To update your thermostat firmware:
 
 Ensure that the device is on and connected to the same network as your computer during the update process.
 
+## Image Gallery
+
+Here are some images of the `Thermostat_for_Plug-in_Heater` project setup and components:
+
+![Thermostat Wiring Overview](images/kiasarecool-0.jpg)
+*Thermostat Wiring Overview*
+
+![Wiring Detail](images/kiasarecool-1.jpg)
+*Wiring Detail*
+
+![Relay Module Wiring](images/kiasarecool-2.jpg)
+*Relay Module Wiring*
+
+![Completed Assembly Front](images/kiasarecool-3.jpg)
+*Completed Assembly Front*
+
+![Completed Assembly Back](images/kiasarecool-4.jpg)
+*Completed Assembly side/ inside *
+
+
+Please note that these images are for reference only. Ensure all connections are secure and follow safety standards when replicating this project.
 ## Contributing
 
 Contributions to the `Thermostat_for_Plug-in_Heater` project are welcome. Please fork this repository and submit pull requests with your improvements.
