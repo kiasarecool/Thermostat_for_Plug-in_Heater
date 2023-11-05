@@ -1,6 +1,6 @@
 # Thermostat for Plug-in Heater
 
-This repository contains the code and documentation for a custom-built thermostat designed to control plug-in heaters. The thermostat uses a dual 10A relays setup in parallel to handle up to 20A of current, making it suitable for high-power applications such as heating a home greenhouse.
+This repository contains the code and documentation for a custom-built thermostat designed to control plug-in heaters. The thermostat uses dual 10A relays setup in parallel to handle up to 20A of current, making it suitable for high-power applications such as heating a home greenhouse.
 
 
 ![Thermostat Wiring Overview](images/kiasarecool-30.jpg)
