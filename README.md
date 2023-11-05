@@ -55,18 +55,23 @@ Here's a guide on how to wire the components for the `Thermostat_for_Plug-in_Hea
 - **SCL**: Connect to GPIO 9 (SCL), shared with the BME280 sensor.
 
 ### Relay Module (HiLetGo 4-channel)
-- **VCC**: Connect to the 12V output from the transformer via the DC barrel plug.
+- **VCC**: Connect to the VCC (5v) output from the ESP-32 S2 Mini.
 - **IN1 and IN2**: Connect to the same GPIO pin on the ESP32-S2 Mini for relay control.
-- **GND**: Connect to GND.
-- **COM terminals of Relay 1 and Relay 2**: Bridge these terminals together and then connect to 120v Load IN
-- **NO terminals of Relay 1 and Relay 2**: Bridge these terminals together and then connect to the HOT or LOAD side of the 120V plug.
+- **GND**: Combine wire with other GND wires. Connect to GND on ESP32. 
+- **COM terminals of Relay 1 and Relay 2**: Bridge these terminals together with a short 12 to 16 AWG wire. Strip one end first, then grasp the insulator near the exposed wire, put your wire strippers directly in the center and pull to expose a small section of wire, but do not remove the rest of the insulation yet. next move to the remaining side of the wire that is not exposed yet and grasp just passed the middle exposed wire, and use your wire strippers to expose the wire on that side as well. After that if you are able to connect your jumper into both COM of relay 1 & 2 and use a 12 AWG wire, or thicker to then connect to 120v Load IN.
+  
+- **NO terminals of Relay 1 and Relay 2**: After repeating the same process above to create another jumper wire
+bridge these terminals together and then connect to the HOT or LOAD side of the 120V plug.
 - **Nutreal power line**: Connect to Nutreal leg of 12v plug, use 2nd plug termnial to porvide Nutreal to USB power block and 12V transformer if being included. DO NOT connect to relay.
-- **Add Cooling Function**: Connect 2nd 12v Plug hot leg to NC of relay and Nutreal to exisitng nutreal line (all Nutreals get tied together, remember to ground the plug from your power plug cable)
+- **Add Cooling Function**: Connect 2nd 120v Plug hot leg to NC of relay and Nutreal leg of 2nd plug to exisitng nutreal line (all Nutreals get tied together, remember to ground the plug from your power plug cable)
+- that will enable a second plug-in to be triggered opposite of the heat plug, for a window unit, fan, or whatever your heart desires that runs on 120 V and is less than 20 A 
 
 ### Buttons
-- **Increase Setpoint**: Connect one side to GPIO 14 and the other side to GND.
-- **Decrease Setpoint**: Connect one side to GPIO 12 and the other side to GND.
-- **Setpoint Adjustment Mode**: Connect one side to GPIO 10 and the other side to GND.
+- **Increase Setpoint**: Connect one side to GPIO 14 and the other side to GND cluster.
+- **Decrease Setpoint**: Connect one side to GPIO 12 and the other side to GND cluster.
+- **Setpoint Adjustment Mode**: Connect one side to GPIO 10 and the other side to GND. 
+- Tip - I connected the GND from this switch to the ground of everything on the face plate. To explain in more detail, I connected the grounds for the up and down buttons, the screen and the LEDs to the setpoint mode switch COM leg, allowing me to only run one wire from setpoint mode switch on the the face plate for GND to the esp32. I highly recommended doing this because there are already plenty of wires, containing them in a wire, loom or plain old tape definitely helps, but make sure you can keep which one is which clearly labled. -kiasarecool
+  
 
 ### LEDs
 - **"Relay On" LED**: Connect the anode (longer leg) to a GPIO and the cathode (shorter leg) to GND through a resistor (e.g., 330Ω).
@@ -74,6 +79,9 @@ Here's a guide on how to wire the components for the `Thermostat_for_Plug-in_Hea
 
 Remember to follow all safety precautions when working with electricity, especially mains voltages. It is recommended that mains electricity connections be handled by a qualified electrician, or a brave USA homeowner that understands the risks, since that is legal here. The relay connections to the 120V plug should be insulated properly and secured within an appropriate enclosure.
 
+make sure your donor extension cord can handle 20 A at the minimum recommended would be at least 25 A
+
+You can figure this yourself using the standard amp versus distance wire gauge chart. I'm not responsible if you burn something down by using wires that can't handle the power. 
 
 ## Setup and Usage
 
